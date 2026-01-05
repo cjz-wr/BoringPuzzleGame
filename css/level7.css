@@ -1,0 +1,183 @@
+.level7-div2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+.level7-div3{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", "STKaiti", cursive;
+}
+
+
+
+
+
+#level7-p1{
+    font-size: 200%;
+    color: orange;
+}
+
+
+
+
+#level7-p3{
+    font-size: 200%;
+    color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#level7-scrollable-tag {
+    width: 400px;
+    height: 500px;
+    overflow: auto;
+    white-space: pre-wrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255,255,255,0.8)), url("../img/level7-1.jpg");
+    /* 使用半透明白色覆盖在背景图片上以增强文字的可读性 */
+    background-size: cover; /* 确保背景图片完全覆盖容器 */
+    background-position: center; /* 让背景图片居中显示 */
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 30pt;
+    color: #851603;
+    text-align: center;
+    padding: 15px; /* 增加内边距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加柔和的阴影 */
+    border-radius: 10px; /* 圆角处理 */
+    box-sizing: border-box; /* 确保padding和border不会增加元素的实际宽度和高度 */
+}
+
+#l7-ok, #l7-nok {
+    background: linear-gradient(to bottom, #deb887, #a67c52); /* 渐变色，更立体 */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e2723;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/* 悬停效果 */
+#l7-ok:hover , #l7-nok:hover {
+    background: linear-gradient(to bottom, #d2b48c, #9c6f42);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 点击/激活状态 */
+#l7-ok:active , #l7-nok:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to bottom, #c19a6b, #8b5e3c);
+}
+
+
+.level7-div2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+
+.level7-div3{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", "STKaiti", cursive;
+}
+
+
+
+
+
+#level7-p1{
+    font-size: 200%;
+    color: orange;
+}
+
+
+
+
+#level7-p3{
+    font-size: 200%;
+    color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#level7-scrollable-tag {
+    width: 400px;
+    height: 500px;
+    overflow: auto;
+    white-space: pre-wrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255,255,255,0.8)), url("../img/level7-1.jpg");
+    /* 使用半透明白色覆盖在背景图片上以增强文字的可读性 */
+    background-size: cover; /* 确保背景图片完全覆盖容器 */
+    background-position: center; /* 让背景图片居中显示 */
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 30pt;
+    color: #851603;
+    text-align: center;
+    padding: 15px; /* 增加内边距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加柔和的阴影 */
+    border-radius: 10px; /* 圆角处理 */
+    box-sizing: border-box; /* 确保padding和border不会增加元素的实际宽度和高度 */
+}
+
+#l7-ok, #l7-nok {
+    background: linear-gradient(to bottom, #deb887, #a67c52); /* 渐变色，更立体 */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e2723;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/* 悬停效果 */
+#l7-ok:hover , #l7-nok:hover {
+    background: linear-gradient(to bottom, #d2b48c, #9c6f42);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 点击/激活状态 */
+#l7-ok:active , #l7-nok:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to bottom, #c19a6b, #8b5e3c);
+}
+
+
+#l7-d-p1 {
+    display: inline-block; /* 使元素表现为行内块级元素，可设置宽高且不独占一行 */
+    width: 0;              /* 将元素自身宽度设为 0，隐藏其原始内容区域 */
+    height: 0;             /* 将元素自身高度设为 0，隐藏其原始内容区域 */
+}
+
+/* 为 #l7-d-p1 元素添加伪元素 ::before（在元素内容前插入内容） */
+#l7-d-p1::before {
+    content: "";           /* 必须设置 content 属性（即使为空），伪元素才能显示 */
+    display: block;        /* 将伪元素设为块级元素，使其尊重 width 和 height */
+    width: 20px;           /* 设置伪元素的宽度为 20 像素 */
+    height: 20px;          /* 设置伪元素的高度为 20 像素 */
+    background: #eb8634;   /* 设置伪元素的背景颜色为橙色（十六进制色值） */
+    border-radius: 4px;    /* 给伪元素添加 4px 的圆角，使其边缘略带圆润 */
+}

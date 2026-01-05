@@ -8,12 +8,6 @@ let chang = 80
 
 
 
-//用于保存进度
-function completeLevel(currentLevel) {
-    // 2. 保存进度（保存的是“已完成”的关卡）
-    localStorage.setItem("gameLevel", String(currentLevel));
-}
-
 
 
 function bigbn(){
@@ -80,4 +74,3 @@ if (level3) {
 }
 bigbn()
 smallbn()
-completeLevel(3)

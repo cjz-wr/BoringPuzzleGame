@@ -1,8 +1,8 @@
-//用于保存进度
-function completeLevel(currentLevel) {
-    // 2. 保存进度（保存的是“已完成”的关卡）
-    localStorage.setItem("gameLevel", String(currentLevel));
-}
+// //用于保存进度
+// function completeLevel(currentLevel) {
+//     // 2. 保存进度（保存的是“已完成”的关卡）
+//     localStorage.setItem("gameLevel", String(currentLevel));
+// }
 
 
 function nextLevel(){
@@ -27,4 +27,4 @@ if (title) {
 }
 nextLevel()
 
-completeLevel(2)
+// completeLevel(2)
