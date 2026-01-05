@@ -1,0 +1,21 @@
+
+#title{
+    position: relative;
+}
+
+.Level2-div1{
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", "STKaiti", cursive;
+    font-size: 250%;
+    text-align: center;
+
+}
+.Level2-div2{
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", cursive;
+}
+#level2-p1{
+    font-size: 250%;
+    color: rgba(0, 166, 255, 0.31);
+}
+#level2-p2{
+    font-size: 5%;
+}

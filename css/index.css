@@ -1,0 +1,28 @@
+#title{
+    text-align: center;
+    font-size: 500%;
+    font-family: "Brush Script MT", cursive;
+}
+.descriptionAndStar{
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", cursive;
+    position: relative;
+}
+#description1{
+    text-align: left;
+    font-size: 90%;
+
+}
+#description2{
+    text-align: left;
+    font-size: 150%;
+
+}
+#start{
+    text-align: center;
+    font-size: 250%;
+}
+#start-text{
+    font-size: 150%;
+    color: white;
+
+}
