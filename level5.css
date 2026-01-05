@@ -1,0 +1,49 @@
+.level5-div{
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", "STKaiti", cursive;
+    font-weight: bold;
+}
+#level5-p1{
+    font-size: 200%;
+}
+#level5-sp1{
+    color: coral;
+}
+
+.level5-div2{
+    text-align: center;
+    align-content: center;
+}
+
+#find-next2 {
+    justify-content: center;
+    display: flex;
+    gap: 20px; /* 控制“上一个”和“下一个”之间的间距，可选 */
+}
+
+/* 去掉 <p> 默认的上下 margin，避免布局错位 */
+#find-next2 p {
+    margin: 0;
+    padding: 10px 24px;           /* 内边距：上下10px，左右24px */
+    background-color: coral;
+    color: white;                 /* 白色文字更清晰 */
+    border-radius: 8px;           /* 圆角 */
+    cursor: pointer;              /* 鼠标悬停变手型 */
+    font-weight: bold;            /* 加粗文字 */
+    text-align: center;           /* 文字居中（对 inline-block/flex 子项有效） */
+    transition: all 0.2s ease;    /* 平滑过渡效果 */
+    user-select: none;            /* 禁止选中文字 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 轻微阴影，增加立体感 */
+}
+
+/* 悬停效果（鼠标放上去时） */
+#find-next2 p:hover {
+    background-color: #ff7f50;    /* 稍亮一点的珊瑚色（或自定义） */
+    transform: translateY(-2px);  /* 微微上浮 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+/* 点击效果（按下时） */
+#find-next2 p:active {
+    transform: translateY(0);     /* 回到原位 */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}

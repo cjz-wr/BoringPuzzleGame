@@ -1,0 +1,30 @@
+
+
+body{
+    background-image: url("../img/level4-1.jpg");
+    background-size: cover;
+}
+
+#title{
+    color: #e6c170;
+}
+
+
+.level3-div{
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", cursive;
+}
+#level4-p1{
+    color: coral;
+    font-size: 250%;
+}
+#level4-p2{
+    color: coral;
+    font-size: 300%;
+}
+
+#level4-p3{
+    background-color: coral;
+    display: inline;
+    padding: 4px 10px;
+    color: coral;
+}
