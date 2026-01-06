@@ -1,0 +1,46 @@
+/* css/level9.css */
+
+/* 可在此添加第九关特有的元素，比如按钮、提示框、动画等 */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(79, 172, 254, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(0, 242, 254, 0.1) 0%, transparent 40%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+h1 {
+    animation: pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(79, 172, 254, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(0, 242, 254, 0.9), 0 0 40px rgba(0, 242, 254, 0.5);
+    }
+}
+
+/* 如果后续要加按钮或其他交互元素，可预留样式 */
+#l9-action {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: rgba(0, 210, 255, 0.2);
+    border: 2px solid #00d2ff;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#l9-action:hover {
+    background: rgba(0, 210, 255, 0.4);
+    transform: scale(1.05);
+}
