@@ -1,0 +1,12 @@
+body{
+    background-image: url("../img/level8-1.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+
+}
+.level8-div{
+    font-family: "STXingkai", "Kaiti SC", "KaiTi", "STKaiti", cursive;
+    font-size: 250%
+
+}

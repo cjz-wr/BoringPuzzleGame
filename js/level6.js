@@ -16,15 +16,20 @@ function isColliding(el1, el2) {
     );
 }
 
-
-
-
 if (level6_img) {
     let isDragging = false;
     let offsetX, offsetY;
 
     // 鼠标按下（开始拖拽）
-    level6_img.addEventListener("mousedown", function (event) {
+    level6_img.addEventListener("mousedown", startDrag);
+
+    // 触摸开始（移动端）
+    level6_img.addEventListener("touchstart", function(event) {
+        startDrag(event.touches[0]); // 使用第一个触摸点
+    });
+
+    // 开始拖拽的通用函数
+    function startDrag(event) {
         isDragging = true;
         const rect = level6_img.getBoundingClientRect();
         offsetX = event.clientX - rect.left;
@@ -32,11 +37,21 @@ if (level6_img) {
 
         level6_img.style.position = "absolute";
         level6_img.style.zIndex = "1";
-        event.preventDefault(); // 阻止拖拽图片默认行为（如显示禁止图标）
-    });
+        level6_img.style.touchAction = "none"; // 防止移动端的默认触摸行为
+        event.preventDefault(); // 阻止拖拽图片默认行为
+    }
 
-    // 全局 mousemove（确保鼠标移出图片也能继续拖）
-    document.addEventListener("mousemove", function (event) {
+    // 鼠标移动
+    document.addEventListener("mousemove", handleMove);
+
+    // 触摸移动
+    document.addEventListener("touchmove", function(event) {
+        handleMove(event.touches[0]);
+        event.preventDefault(); // 防止页面滚动
+    }, { passive: false });
+
+    // 移动处理通用函数
+    function handleMove(event) {
         if (!isDragging) return;
 
         level6_img.style.left = (event.clientX - offsetX) + "px";
@@ -50,11 +65,23 @@ if (level6_img) {
             alert("太棒了，你帮助doro回家了，她要给你橘子吃呐")
             window.location.href = "level7.html"
         }
-
-    });
+    }
 
     // 全局 mouseup（确保任何地方松开都能结束拖拽）
-    document.addEventListener("mouseup", function () {
+    document.addEventListener("mouseup", endDrag);
+
+    // 触摸结束
+    document.addEventListener("touchend", endDrag);
+    document.addEventListener("touchcancel", endDrag); // 处理触摸取消的情况
+
+    // 结束拖拽通用函数
+    function endDrag() {
         isDragging = false;
+    }
+
+    // 防止移动端长按出现菜单
+    level6_img.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+        return false;
     });
 }
